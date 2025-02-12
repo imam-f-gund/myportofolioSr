@@ -1638,3 +1638,18 @@ section {
 .img-fluid {
   border-radius: 10px !important;
 }
+
+/* Ensures the image is centered in the swiper */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  object-fit: contain;  /* Ensures the image scales nicely */
+  max-width: 100%;  /* Restricts width to the container */
+  max-height: 500px;  /* Set your preferred max height */
+  width: auto;
+  height: auto;
+}
